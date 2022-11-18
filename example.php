@@ -25,6 +25,8 @@
                         <div class="card-body">
                             <p class="card-text">{{$foto->nombre}}</p>
                             <p class="card-text">{{$foto->descripcion}}</p>
+                            <p class="card-text">{{$foto->fecha}}</p>
+                            <p class="card-text">{{$foto->descripcion}}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <p> <i class="bi bi-chat-dots"></i>
