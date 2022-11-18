@@ -3,6 +3,7 @@
 @section('content')
 <main>
     <style>
+        
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -22,8 +23,8 @@
           <section class="py-5 text-center container">
               <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                  <h1 class="fw-light">Peliculas que se estrenan este 2022</h1>
-                  <p class="lead text-muted">Aqui puedes ver todas las peliculas que se van a estrenar este 2022, si ya viste algunas deja tu comentario y recomendacion</p>
+                  <h1 class="fw-light">Recomienda tus peliculas favoritas</h1>
+                  <p class="lead text-muted">Si tienes una pelicula que te gusto, puedes recomendarla para todos.</p>
                 </div>
               </div>
             </section>
@@ -52,6 +53,7 @@
                                 <div class="card card-body">
                                     {{$comentario->comentario}}
                                 </div>
+                                
                                 <small class="text-muted">{{$comentario->User->name}}</small>
                                 @endforeach
                                 <form method="POST" action="{{ route('subirComentario') }}" >
